@@ -1,0 +1,4 @@
+Bundle-Name: t3-rest-service
+Bundle-SymbolicName: t3.rest.service
+Bundle-Version: 1.0.0
+Liferay-Configuration-Path: /configuration
