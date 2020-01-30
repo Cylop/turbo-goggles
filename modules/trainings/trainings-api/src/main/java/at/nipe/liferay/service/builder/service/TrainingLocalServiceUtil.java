@@ -19,6 +19,8 @@ import org.osgi.framework.Bundle;
 import org.osgi.framework.FrameworkUtil;
 import org.osgi.util.tracker.ServiceTracker;
 
+import com.liferay.portal.kernel.exception.PortalException;
+
 /**
  * Provides the local service utility for Training. This utility wraps
  * <code>at.nipe.liferay.service.builder.service.impl.TrainingLocalServiceImpl</code> and

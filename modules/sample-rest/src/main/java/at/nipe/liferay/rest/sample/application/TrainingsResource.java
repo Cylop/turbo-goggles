@@ -33,6 +33,7 @@ public class TrainingsResource {
 		}else {
 			trainings =  mapTrainingToDto(trainingService.getTrainings(-1, -1));
 		}
+		
 		return trainings;
 	}
 	
