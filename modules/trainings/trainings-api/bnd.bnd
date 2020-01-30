@@ -1,0 +1,10 @@
+Bundle-Name: trainings-api
+Bundle-SymbolicName: at.nipe.liferay.service.builder.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	at.nipe.liferay.service.builder.exception,\
+	at.nipe.liferay.service.builder.model,\
+	at.nipe.liferay.service.builder.service,\
+	at.nipe.liferay.service.builder.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../trainings-service/service.xml

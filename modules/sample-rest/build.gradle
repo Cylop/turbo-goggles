@@ -1,0 +1,9 @@
+dependencies {
+	compileOnly group: "com.liferay.portal", name: "com.liferay.portal.kernel"
+	compileOnly group: "javax.ws.rs", name: "javax.ws.rs-api"
+	compileOnly group: "org.osgi", name: "org.osgi.service.component.annotations"
+	compileOnly group: "org.osgi", name: "org.osgi.service.jaxrs"
+	compile group: 'com.fasterxml.jackson.jaxrs', name: 'jackson-jaxrs-json-provider', version: '2.8.8'
+	compileOnly project(":modules:trainings:trainings-api")
+	compileOnly project(":modules:trainings:trainings-service")
+}

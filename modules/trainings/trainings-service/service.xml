@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_2_0.dtd">
+
+<service-builder dependency-injector="ds"
+	package-path="at.nipe.liferay.service.builder">
+	<namespace>Sample</namespace>
+	<entity local-service="true" name="Training"
+		remote-service="true" uuid="true" uuid-accessor="true"
+		dynamic-update-enabled="true">
+
+		<!-- PK fields -->
+
+		<column name="trainingId" primary="true" type="long" />
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long" />
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long" />
+		<column name="userId" type="long" />
+		<column name="userName" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Other fields -->
+
+		<column type="String" name="trainer"></column>
+		<column type="String" name="name"></column>
+		<column type="Date" name="date"></column>
+		<column type="Double" name="hours"></column>
+
+		<!-- Order -->
+
+		<order by="asc">
+			<order-column name="date" />
+			<order-column name="name"></order-column>
+		</order>
+
+		<!-- Finder methods -->
+
+		<finder name="N" return-type="Collection">
+			<finder-column name="name" />
+		</finder>
+		<finder name="T" return-type="Collection">
+			<finder-column name="trainer" />
+		</finder>
+		<finder name="N_T" return-type="Collection">
+			<finder-column name="name" />
+			<finder-column name="trainer" />
+		</finder>
+
+		<!-- References -->
+
+		<reference entity="AssetEntry"
+			package-path="com.liferay.portlet.asset" />
+		<reference entity="AssetTag"
+			package-path="com.liferay.portlet.asset" />
+	</entity>
+</service-builder>
