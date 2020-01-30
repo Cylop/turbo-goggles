@@ -1,0 +1,4 @@
+Bundle-Name: sample-rest
+Bundle-SymbolicName: at.nipe.liferay.rest.sample
+Bundle-Version: 1.0.0
+Liferay-Configuration-Path: /configuration

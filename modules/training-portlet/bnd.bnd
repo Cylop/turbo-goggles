@@ -1,0 +1,4 @@
+Bundle-Name: training-portlet
+Bundle-SymbolicName: at.nipe.liferay.training.portlet
+Bundle-Version: 1.0.0
+Export-Package: at.nipe.liferay.training.portlet.constants
