@@ -2,7 +2,6 @@ dependencies {
 	compileOnly group: "com.liferay", name: "com.liferay.petra.lang"
 	compileOnly group: "com.liferay", name: "com.liferay.petra.string"
 	compileOnly group: "com.liferay", name: "com.liferay.portal.aop.api"
-	compileOnly group: "com.liferay", name: "com.liferay.registry.api", version: "1.0.0"
 	compileOnly group: "com.liferay.portal", name: "com.liferay.portal.kernel"
 	compileOnly group: "org.osgi", name: "org.osgi.annotation.versioning"
 	compileOnly group: "org.osgi", name: "org.osgi.core"
@@ -14,4 +13,4 @@ buildService {
 	apiDir = "../guestbook-api/src/main/java"
 }
 
-group = "guestbook"
+group = "com.liferay.docs.guestbook"

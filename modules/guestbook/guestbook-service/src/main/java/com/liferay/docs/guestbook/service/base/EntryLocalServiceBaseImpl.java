@@ -547,14 +547,14 @@ public abstract class EntryLocalServiceBaseImpl
 			throw new SystemException(e);
 		}
 	}
+	
+	@Reference
+	protected GuestbookPersistence guestbookPersistence;
 
 	protected EntryLocalService entryLocalService;
 
 	@Reference
 	protected EntryPersistence entryPersistence;
-
-	@Reference
-	protected GuestbookPersistence guestbookPersistence;
 
 	@Reference
 	protected com.liferay.counter.kernel.service.CounterLocalService
